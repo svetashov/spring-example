@@ -6,9 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -21,9 +19,6 @@ public class AboutController {
 
     @Value("${build.version}")
     private String buildVersion;
-
-    @Value("${build.timestamp}")
-    private String buildTimestamp;
 
     private Map<String, String> _about = new HashMap<>();
 
